@@ -1,0 +1,12 @@
+server:
+  port: 8170
+kafka:
+  properties:
+    - key: bootstrap.servers
+      value: 127.0.0.1:9092
+    - key: key.serializer
+      value: org.apache.kafka.common.serialization.StringSerializer
+    - key: value.serializer
+      value: org.springframework.kafka.support.serializer.JsonSerializer
+action:
+  topic: TodoAction
